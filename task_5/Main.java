@@ -12,7 +12,10 @@ public class Main {
         System.out.print("Введите количество градусов за цельсием: ");
         double number = in.nextDouble();
 
-        ConverterTemperature converterTemperature = new ConverterTemperature ();
-        converterTemperature.convert(number);
+        Kelvin kelvin = new Kelvin();
+        kelvin.convert(number);
+
+        Faren faren = new Faren();
+        faren.convert(number);
     }
 }
